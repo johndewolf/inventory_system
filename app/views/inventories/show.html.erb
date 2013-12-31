@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:
+    <%= @inventory.name %></strong>
+</p>
+<p>
+  Description:
+    <%= @inventory.description %>
+</p>
+<p>
+  Quantity:
+    <%= @inventory.quantity %>
+</p>
+<%= link_to 'Add Item', new_inventory_path, class: 'button radius' %>

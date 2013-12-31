@@ -1,0 +1,18 @@
+<h1>Total Inventory</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <% @inventories.each do |inventory| %>
+  <tr>
+    <td><%= inventory.name %></td>
+    <td><%= inventory.description %></td>
+    <td><%= inventory.quantity %></td>
+  </tr>
+  <% end %>
+</table>
+<%= link_to 'Add Item', new_inventory_path, class: 'button radius' %>
